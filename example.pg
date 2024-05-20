@@ -1,0 +1,8 @@
+# Nodes
+alice :person name:"Alice" age:34
+bob   :person name:"Bob"   age:32
+luna  :dog                 age:4
+
+# Edges
+alice -- bob :friends since:2020
+alice -> luna :owns

@@ -6,8 +6,15 @@ project:
 
 website:
   title: "Property Graph Exchange Format (PG)"
+  description: "Data model, formats and tools for labeled property graphs"
+  repo-url: https://github.com/pg-format/pg-format.github.io
+  site-url: http://pg-format.github.io/
+  repo-actions:
+    - edit
 
 format:
   html:
     theme: cosmo
+    syntax-definitions:
+     - pg.xml
 
