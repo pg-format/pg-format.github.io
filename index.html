@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -65,6 +99,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -73,48 +110,84 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Property Graph Exchange Format (PG)</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Property Graph Exchange Format (PG)</h1>
+
+
+
+
+<p>The Property Graph Exchange Format (PG) provides a <strong>data model</strong>, serialization <strong>formats</strong> and <strong><a href="#applications">applications</a></strong> for <strong>labeled property graphs</strong>. See the <a href="https://pg-format.github.io/specification/">PG specification</a> for details.</p>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode pg code-with-copy"><code class="sourceCode pg"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Nodes</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>alice <span class="dt">:person</span> <span class="fu">name:</span><span class="st">"Alice"</span> <span class="fu">age:</span><span class="dv">34</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>bob   <span class="dt">:person</span> <span class="fu">name:</span><span class="st">"Bob"</span>   <span class="fu">age:</span><span class="dv">32</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>luna  <span class="dt">:dog</span>                 <span class="fu">age:</span><span class="dv">4</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Edges</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>alice <span class="cf">--</span> bob <span class="dt">:friends</span> <span class="fu">since:</span><span class="dv">2020</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>alice <span class="cf">-&gt;</span> luna <span class="dt">:owns</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    alice["&lt;b&gt;alice&lt;/b&gt;&lt;br/&gt;&lt;u&gt;person&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Alice&lt;/i&gt;&lt;br/&gt;&lt;i&gt;age: 34&lt;/i&gt;"]
+    bob["&lt;b&gt;bob&lt;/b&gt;&lt;br/&gt;&lt;u&gt;person&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Bob&lt;/i&gt;&lt;br/&gt;&lt;i&gt;age: 32&lt;/i&gt;"]
+    luna["&lt;b&gt;luna&lt;/b&gt;&lt;br/&gt;&lt;u&gt;dog&lt;/u&gt;&lt;br/&gt;&lt;i&gt;age: 4&lt;/i&gt;"]
+    alice -- "&lt;u&gt;friends&lt;/u&gt;&lt;br/&gt;&lt;i&gt;since: 2020&lt;/i&gt;" --- bob
+    alice -- "&lt;u&gt;owns&lt;/u&gt;" --&gt; luna
+
+</pre>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<ul>
-<li><a href="https://pg-format.github.io/specification/">Specification</a></li>
-<li><a href="https://github.com/orgs/pg-format/discussions">Discussions</a></li>
-</ul>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
 <section id="applications" class="level2">
 <h2 class="anchored" data-anchor-id="applications">Applications</h2>
 <ul>
 <li><a href="https://pg-format.github.io/pg-formatter/">pg-formatter</a> web application</li>
 <li><a href="https://github.com/pg-format/pgraphs">pgraphs</a> graph converter</li>
 <li><a href="https://github.com/pg-format/pg-highlight">syntax highlighting</a></li>
+<li><a href="https://github.com/blitzboard/blitzboard">blitzboard</a></li>
+</ul>
+</section>
+<section id="feedback" class="level2">
+<h2 class="anchored" data-anchor-id="feedback">Feedback</h2>
+<ul>
+<li><a href="https://github.com/orgs/pg-format/discussions">Discussions</a></li>
 </ul>
 </section>
 <section id="publications" class="level2">
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <ul>
-<li>…</li>
+<li>Chiba, H., Yamanaka, R., Matsumoto, S.: <a href="https://arxiv.org/abs/1907.03936">Property Graph Exchange Format</a>. 2019</li>
+<li>Chiba, H., Yamanaka, R., Matsumoto, S.: <a href="https://doi.org/10.1007/978-3-030-62466-8_11">G2GML: Graph to Graph Mapping Language for Bridging RDF and Property Graphs</a>. 2020</li>
+<li>Voß, J.: <a href="https://jakobib.github.io/pgraphen2024/">Property-Graphen: eine kurze Einführung</a>. 2024</li>
 </ul>
 
 
@@ -202,7 +275,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/pg-format\.github\.io\/");
+      var filterRegex = new RegExp("http:\/\/pg-format\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -535,4 +608,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/pg-format/pg-format.github.io/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>

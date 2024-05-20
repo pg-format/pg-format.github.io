@@ -1,1 +1,1 @@
-Sitemap: https://pg-format.github.io/sitemap.xml
+Sitemap: http://pg-format.github.io/sitemap.xml

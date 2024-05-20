@@ -4,20 +4,34 @@
     "href": "index.html",
     "title": "Property Graph Exchange Format (PG)",
     "section": "",
-    "text": "Specification\nDiscussions"
+    "text": "The Property Graph Exchange Format (PG) provides a data model, serialization formats and applications for labeled property graphs. See the PG specification for details."
+  },
+  {
+    "objectID": "index.html#example",
+    "href": "index.html#example",
+    "title": "Property Graph Exchange Format (PG)",
+    "section": "Example",
+    "text": "Example\n# Nodes\nalice :person name:\"Alice\" age:34\nbob   :person name:\"Bob\"   age:32\nluna  :dog                 age:4\n\n# Edges\nalice -- bob :friends since:2020\nalice -&gt; luna :owns\n\n\n\n\n\nflowchart LR\n    alice[\"&lt;b&gt;alice&lt;/b&gt;&lt;br/&gt;&lt;u&gt;person&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Alice&lt;/i&gt;&lt;br/&gt;&lt;i&gt;age: 34&lt;/i&gt;\"]\n    bob[\"&lt;b&gt;bob&lt;/b&gt;&lt;br/&gt;&lt;u&gt;person&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Bob&lt;/i&gt;&lt;br/&gt;&lt;i&gt;age: 32&lt;/i&gt;\"]\n    luna[\"&lt;b&gt;luna&lt;/b&gt;&lt;br/&gt;&lt;u&gt;dog&lt;/u&gt;&lt;br/&gt;&lt;i&gt;age: 4&lt;/i&gt;\"]\n    alice -- \"&lt;u&gt;friends&lt;/u&gt;&lt;br/&gt;&lt;i&gt;since: 2020&lt;/i&gt;\" --- bob\n    alice -- \"&lt;u&gt;owns&lt;/u&gt;\" --&gt; luna"
   },
   {
     "objectID": "index.html#applications",
     "href": "index.html#applications",
     "title": "Property Graph Exchange Format (PG)",
     "section": "Applications",
-    "text": "Applications\n\npg-formatter web application\npgraphs graph converter\nsyntax highlighting"
+    "text": "Applications\n\npg-formatter web application\npgraphs graph converter\nsyntax highlighting\nblitzboard"
+  },
+  {
+    "objectID": "index.html#feedback",
+    "href": "index.html#feedback",
+    "title": "Property Graph Exchange Format (PG)",
+    "section": "Feedback",
+    "text": "Feedback\n\nDiscussions"
   },
   {
     "objectID": "index.html#publications",
     "href": "index.html#publications",
     "title": "Property Graph Exchange Format (PG)",
     "section": "Publications",
-    "text": "Publications\n\n…"
+    "text": "Publications\n\nChiba, H., Yamanaka, R., Matsumoto, S.: Property Graph Exchange Format. 2019\nChiba, H., Yamanaka, R., Matsumoto, S.: G2GML: Graph to Graph Mapping Language for Bridging RDF and Property Graphs. 2020\nVoß, J.: Property-Graphen: eine kurze Einführung. 2024"
   }
 ]
