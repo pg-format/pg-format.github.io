@@ -1,0 +1,13 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!README.md"
+
+website:
+  title: "Property Graph Exchange Format (PG)"
+
+format:
+  html:
+    theme: cosmo
+
