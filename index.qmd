@@ -51,6 +51,7 @@ The [pg-format organization at GitHub](https://github.com/pg-format) contains re
 
 ## Publications
 
+- [Property Graph Exchange Format Specification](https://pg-format.github.io/specification/)
 - Chiba, H., Yamanaka, R., Matsumoto, S.: [Property Graph Exchange Format](https://arxiv.org/abs/1907.03936). 2019
 - Chiba, H., Yamanaka, R., Matsumoto, S.: [G2GML: Graph to Graph Mapping Language for Bridging RDF and Property Graphs](https://doi.org/10.1007/978-3-030-62466-8_11). 2020
 - Voß, J.: [Property-Graphen: eine kurze Einführung](https://jakobib.github.io/pgraphen2024/). 2024
