@@ -43,9 +43,11 @@ The Property Graph Exchange Format (PG) provides a **data model**, serialization
 
 - [syntax highlighting](https://github.com/pg-format/pg-highlight) definitions of PG format exist
 
-## Feedback
+## Feedback and Sources
 
 Feedback and questions are welcome. There is a [discussion board](https://github.com/orgs/pg-format/discussions)!
+
+The [pg-format organization at GitHub](https://github.com/pg-format) contains relevant git repositories and corresponding issue trackers.
 
 ## Publications
 
