@@ -21,11 +21,11 @@
     "text": "Applications\n\npg-formatter is a web application to try out, validate and vizualize property graphs in PG format.\npgraphs is a property graph converter command line application and programming library \nBlitzboard is a dashboard web application for graph data\nsyntax highlighting definitions of PG format exist"
   },
   {
-    "objectID": "index.html#feedback",
-    "href": "index.html#feedback",
+    "objectID": "index.html#feedback-and-sources",
+    "href": "index.html#feedback-and-sources",
     "title": "Property Graph Exchange Format (PG)",
-    "section": "Feedback",
-    "text": "Feedback\nFeedback and questions are welcome. There is a discussion board!"
+    "section": "Feedback and Sources",
+    "text": "Feedback and Sources\nFeedback and questions are welcome. There is a discussion board!\nThe pg-format organization at GitHub contains relevant git repositories and corresponding issue trackers."
   },
   {
     "objectID": "index.html#publications",
