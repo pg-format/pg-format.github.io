@@ -1,0 +1,19 @@
+{
+  "nodes": [{
+     "id": "alice", "labels": [ "person" ],
+     "properties": { "name": [ "Alice" ], "age": [ 34 ] }
+   },{
+     "id": "bob", "labels": [ "person" ],
+     "properties": { "name": [ "Bob" ], "age": [ 32 ] }
+   },{
+     "id": "luna", "labels": [ "dog" ],
+     "properties": { "name": [ "Luna" ], "cute": [ true ] }
+  }],
+  "edges": [ {
+     "from": "alice", "to": "bob", "labels": [ "friends" ], "undirected": true.
+     "properties": { "since": [ 2020 ] }
+   },{
+     "from": "alice", "to": "luna", "labels": [ "owns" ],
+     "properties": {}
+  }]
+}

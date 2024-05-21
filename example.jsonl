@@ -1,0 +1,5 @@
+{"type":"node","id":"alice","labels":["person"],"properties":{"age":[34],"name":["Alice"]}}
+{"type":"node","id":"bob","labels":["person"],"properties":{"age":[32],"name":["Bob"]}}
+{"type":"node","id":"luna","labels":["dog"],"properties":{"cute":[true],"name":["Luna"]}}
+{"type":"edge","from":"alice","to":"bob","labels":["friends"],"properties":{"since":[2020]},"undirected":true}
+{"type":"edge","from":"alice","to":"luna","labels":["owns"],"properties":{}}

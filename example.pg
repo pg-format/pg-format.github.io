@@ -1,8 +1,8 @@
 # Nodes
 alice :person name:"Alice" age:34
 bob   :person name:"Bob"   age:32
-luna  :dog                 age:4
+luna  :dog    name:"Luna"  cute:true
 
 # Edges
-alice -- bob :friends since:2020
-alice -> luna :owns
+alice -- bob :friends since:2020  # directed
+alice -> luna :owns               # undirected

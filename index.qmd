@@ -1,30 +1,51 @@
 ---
 title: "Property Graph Exchange Format (PG)"
 title-block-banner: true
+crossref:
+  lst-title: Example
 ---
 
-The Property Graph Exchange Format (PG) provides a **data model**, serialization **formats** and **[applications]** for **labeled property graphs**. See the [PG specification](https://pg-format.github.io/specification/) for details.
+The Property Graph Exchange Format (PG) provides a **data model**, serialization **formats** and **applications** for **labeled property graphs**. See the **[PG specification](https://pg-format.github.io/specification/)** for details.
 
 ## Example
 
-```pg
+```{.pg #lst-pg lst-cap="Property graph in PG format, with syntax highlighting and as diagram"}
 {{< include example.pg >}}
 ```
 
 ```{mermaid}
-{{< include example.mmd >}}
+%%| fig-align: center
+%%| file: example.mmd
 ```
+
+:::{.column-screen-inset-right}
+
+```{.json #lst-jsonl lst-cap="Same graph in condense PG-JSONL format"}
+{{< include example.jsonl >}}
+```
+
+<!--
+```{.json #lst-json lst-cap="Same graph in PG-JSON format"}
+{{< include example.json >}}
+```
+-->
+
+:::
 
 ## Applications
 
-- [pg-formatter](https://pg-format.github.io/pg-formatter/) web application
-- [pgraphs](https://github.com/pg-format/pgraphs) graph converter
-- [syntax highlighting](https://github.com/pg-format/pg-highlight)
-- [blitzboard](https://github.com/blitzboard/blitzboard)
+- [pg-formatter](https://pg-format.github.io/pg-formatter/) is a web application to try out, validate and vizualize property graphs in PG format.
+
+- [pgraphs](https://github.com/pg-format/pgraphs) is a property graph converter command line application and programming library
+  [![NPM Version](http://img.shields.io/npm/v/pgraphs.svg?style=flat)](https://www.npmjs.org/package/pgraphs)
+
+- [Blitzboard](https://www.blitzboard.io/) is a dashboard web application for graph data
+
+- [syntax highlighting](https://github.com/pg-format/pg-highlight) definitions of PG format exist
 
 ## Feedback
 
-- [Discussions](https://github.com/orgs/pg-format/discussions)
+Feedback and questions are welcome. There is a [discussion board](https://github.com/orgs/pg-format/discussions)!
 
 ## Publications
 
