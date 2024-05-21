@@ -32,6 +32,6 @@
     "href": "index.html#publications",
     "title": "Property Graph Exchange Format (PG)",
     "section": "Publications",
-    "text": "Publications\n\nChiba, H., Yamanaka, R., Matsumoto, S.: Property Graph Exchange Format. 2019\nChiba, H., Yamanaka, R., Matsumoto, S.: G2GML: Graph to Graph Mapping Language for Bridging RDF and Property Graphs. 2020\nVoß, J.: Property-Graphen: eine kurze Einführung. 2024"
+    "text": "Publications\n\nProperty Graph Exchange Format Specification\nChiba, H., Yamanaka, R., Matsumoto, S.: Property Graph Exchange Format. 2019\nChiba, H., Yamanaka, R., Matsumoto, S.: G2GML: Graph to Graph Mapping Language for Bridging RDF and Property Graphs. 2020\nVoß, J.: Property-Graphen: eine kurze Einführung. 2024"
   }
 ]
