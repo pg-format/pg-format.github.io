@@ -106,7 +106,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-search-results"></div>
 <!-- content -->
@@ -129,26 +129,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#example" id="toc-example" class="nav-link active" data-scroll-target="#example">Example</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a></li>
+  <li><a href="#feedback" id="toc-feedback" class="nav-link" data-scroll-target="#feedback">Feedback</a></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/pg-format/pg-format.github.io/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
 
-<p>The Property Graph Exchange Format (PG) provides a <strong>data model</strong>, serialization <strong>formats</strong> and <strong><a href="#applications">applications</a></strong> for <strong>labeled property graphs</strong>. See the <a href="https://pg-format.github.io/specification/">PG specification</a> for details.</p>
-<section id="example" class="level2">
+<p>The Property Graph Exchange Format (PG) provides a <strong>data model</strong>, serialization <strong>formats</strong> and <strong>applications</strong> for <strong>labeled property graphs</strong>. See the <strong><a href="https://pg-format.github.io/specification/">PG specification</a></strong> for details.</p>
+<section id="example" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="example">Example</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode pg code-with-copy"><code class="sourceCode pg"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Nodes</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>alice <span class="dt">:person</span> <span class="fu">name:</span><span class="st">"Alice"</span> <span class="fu">age:</span><span class="dv">34</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>bob   <span class="dt">:person</span> <span class="fu">name:</span><span class="st">"Bob"</span>   <span class="fu">age:</span><span class="dv">32</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>luna  <span class="dt">:dog</span>                 <span class="fu">age:</span><span class="dv">4</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Edges</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>alice <span class="cf">--</span> bob <span class="dt">:friends</span> <span class="fu">since:</span><span class="dv">2020</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>alice <span class="cf">-&gt;</span> luna <span class="dt">:owns</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell" data-layout-align="default">
+<div id="lst-pg" class="pg listing quarto-float">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-pg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Example&nbsp;1: Property graph in PG format, with syntax highlighting and as diagram
+</figcaption>
+<div aria-describedby="lst-pg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode" id="lst-pg"><pre class="sourceCode pg code-with-copy"><code class="sourceCode pg"><span id="lst-pg-1"><a href="#lst-pg-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Nodes</span></span>
+<span id="lst-pg-2"><a href="#lst-pg-2" aria-hidden="true" tabindex="-1"></a>alice <span class="dt">:person</span> <span class="fu">name:</span><span class="st">"Alice"</span> <span class="fu">age:</span><span class="dv">34</span></span>
+<span id="lst-pg-3"><a href="#lst-pg-3" aria-hidden="true" tabindex="-1"></a>bob   <span class="dt">:person</span> <span class="fu">name:</span><span class="st">"Bob"</span>   <span class="fu">age:</span><span class="dv">32</span></span>
+<span id="lst-pg-4"><a href="#lst-pg-4" aria-hidden="true" tabindex="-1"></a>luna  <span class="dt">:dog</span>    <span class="fu">name:</span><span class="st">"Luna"</span>  <span class="fu">cute:</span><span class="kw">true</span></span>
+<span id="lst-pg-5"><a href="#lst-pg-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="lst-pg-6"><a href="#lst-pg-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Edges</span></span>
+<span id="lst-pg-7"><a href="#lst-pg-7" aria-hidden="true" tabindex="-1"></a>alice <span class="cf">--</span> bob <span class="dt">:friends</span> <span class="fu">since:</span><span class="dv">2020</span>  <span class="co"># directed</span></span>
+<span id="lst-pg-8"><a href="#lst-pg-8" aria-hidden="true" tabindex="-1"></a>alice <span class="cf">-&gt;</span> luna <span class="dt">:owns</span>               <span class="co"># undirected</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+<div class="cell" data-file="example.mmd" data-layout-align="center">
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>
@@ -156,31 +176,68 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre class="mermaid mermaid-js">flowchart LR
     alice["&lt;b&gt;alice&lt;/b&gt;&lt;br/&gt;&lt;u&gt;person&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Alice&lt;/i&gt;&lt;br/&gt;&lt;i&gt;age: 34&lt;/i&gt;"]
     bob["&lt;b&gt;bob&lt;/b&gt;&lt;br/&gt;&lt;u&gt;person&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Bob&lt;/i&gt;&lt;br/&gt;&lt;i&gt;age: 32&lt;/i&gt;"]
-    luna["&lt;b&gt;luna&lt;/b&gt;&lt;br/&gt;&lt;u&gt;dog&lt;/u&gt;&lt;br/&gt;&lt;i&gt;age: 4&lt;/i&gt;"]
+    luna["&lt;b&gt;luna&lt;/b&gt;&lt;br/&gt;&lt;u&gt;dog&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Luna&lt;/i&gt;&lt;br/&gt;&lt;i&gt;cute: true&lt;/i&gt;"]
     alice -- "&lt;u&gt;friends&lt;/u&gt;&lt;br/&gt;&lt;i&gt;since: 2020&lt;/i&gt;" --- bob
     alice -- "&lt;u&gt;owns&lt;/u&gt;" --&gt; luna
-
 </pre>
 </div>
 <p></p></figure><p></p>
 </div>
 </div>
 </div>
+<div class="column-screen-inset-right">
+<div id="lst-jsonl" class="json listing quarto-float">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-jsonl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Example&nbsp;2: Same graph in condense PG-JSONL format
+</figcaption>
+<div aria-describedby="lst-jsonl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode" id="lst-jsonl"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="lst-jsonl-1"><a href="#lst-jsonl-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"node"</span><span class="fu">,</span><span class="dt">"id"</span><span class="fu">:</span><span class="st">"alice"</span><span class="fu">,</span><span class="dt">"labels"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"person"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"properties"</span><span class="fu">:{</span><span class="dt">"age"</span><span class="fu">:</span><span class="ot">[</span><span class="dv">34</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"name"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"Alice"</span><span class="ot">]</span><span class="fu">}}</span></span>
+<span id="lst-jsonl-2"><a href="#lst-jsonl-2" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"node"</span><span class="fu">,</span><span class="dt">"id"</span><span class="fu">:</span><span class="st">"bob"</span><span class="fu">,</span><span class="dt">"labels"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"person"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"properties"</span><span class="fu">:{</span><span class="dt">"age"</span><span class="fu">:</span><span class="ot">[</span><span class="dv">32</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"name"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"Bob"</span><span class="ot">]</span><span class="fu">}}</span></span>
+<span id="lst-jsonl-3"><a href="#lst-jsonl-3" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"node"</span><span class="fu">,</span><span class="dt">"id"</span><span class="fu">:</span><span class="st">"luna"</span><span class="fu">,</span><span class="dt">"labels"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"dog"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"properties"</span><span class="fu">:{</span><span class="dt">"cute"</span><span class="fu">:</span><span class="ot">[</span><span class="kw">true</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"name"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"Luna"</span><span class="ot">]</span><span class="fu">}}</span></span>
+<span id="lst-jsonl-4"><a href="#lst-jsonl-4" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"edge"</span><span class="fu">,</span><span class="dt">"from"</span><span class="fu">:</span><span class="st">"alice"</span><span class="fu">,</span><span class="dt">"to"</span><span class="fu">:</span><span class="st">"bob"</span><span class="fu">,</span><span class="dt">"labels"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"friends"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"properties"</span><span class="fu">:{</span><span class="dt">"since"</span><span class="fu">:</span><span class="ot">[</span><span class="dv">2020</span><span class="ot">]</span><span class="fu">},</span><span class="dt">"undirected"</span><span class="fu">:</span><span class="kw">true</span><span class="fu">}</span></span>
+<span id="lst-jsonl-5"><a href="#lst-jsonl-5" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"edge"</span><span class="fu">,</span><span class="dt">"from"</span><span class="fu">:</span><span class="st">"alice"</span><span class="fu">,</span><span class="dt">"to"</span><span class="fu">:</span><span class="st">"luna"</span><span class="fu">,</span><span class="dt">"labels"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"owns"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"properties"</span><span class="fu">:{}}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+<!--
+```{.json #lst-json lst-cap="Same graph in PG-JSON format"}
+{
+  "nodes": [{
+     "id": "alice", "labels": [ "person" ],
+     "properties": { "name": [ "Alice" ], "age": [ 34 ] }
+   },{
+     "id": "bob", "labels": [ "person" ],
+     "properties": { "name": [ "Bob" ], "age": [ 32 ] }
+   },{
+     "id": "luna", "labels": [ "dog" ],
+     "properties": { "name": [ "Luna" ], "cute": [ true ] }
+  }],
+  "edges": [ {
+     "from": "alice", "to": "bob", "labels": [ "friends" ], "undirected": true.
+     "properties": { "since": [ 2020 ] }
+   },{
+     "from": "alice", "to": "luna", "labels": [ "owns" ],
+     "properties": {}
+  }]
+}
+
+```
+-->
+</div>
 </section>
 <section id="applications" class="level2">
 <h2 class="anchored" data-anchor-id="applications">Applications</h2>
 <ul>
-<li><a href="https://pg-format.github.io/pg-formatter/">pg-formatter</a> web application</li>
-<li><a href="https://github.com/pg-format/pgraphs">pgraphs</a> graph converter</li>
-<li><a href="https://github.com/pg-format/pg-highlight">syntax highlighting</a></li>
-<li><a href="https://github.com/blitzboard/blitzboard">blitzboard</a></li>
+<li><p><a href="https://pg-format.github.io/pg-formatter/">pg-formatter</a> is a web application to try out, validate and vizualize property graphs in PG format.</p></li>
+<li><p><a href="https://github.com/pg-format/pgraphs">pgraphs</a> is a property graph converter command line application and programming library <a href="https://www.npmjs.org/package/pgraphs"><img src="http://img.shields.io/npm/v/pgraphs.svg?style=flat" class="img-fluid" alt="NPM Version"></a></p></li>
+<li><p><a href="https://www.blitzboard.io/">Blitzboard</a> is a dashboard web application for graph data</p></li>
+<li><p><a href="https://github.com/pg-format/pg-highlight">syntax highlighting</a> definitions of PG format exist</p></li>
 </ul>
 </section>
 <section id="feedback" class="level2">
 <h2 class="anchored" data-anchor-id="feedback">Feedback</h2>
-<ul>
-<li><a href="https://github.com/orgs/pg-format/discussions">Discussions</a></li>
-</ul>
+<p>Feedback and questions are welcome. There is a <a href="https://github.com/orgs/pg-format/discussions">discussion board</a>!</p>
 </section>
 <section id="publications" class="level2">
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
@@ -608,4 +665,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/pg-format/pg-format.github.io/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pg-format/pg-format.github.io/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>

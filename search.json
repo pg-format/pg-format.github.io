@@ -11,21 +11,21 @@
     "href": "index.html#example",
     "title": "Property Graph Exchange Format (PG)",
     "section": "Example",
-    "text": "Example\n# Nodes\nalice :person name:\"Alice\" age:34\nbob   :person name:\"Bob\"   age:32\nluna  :dog                 age:4\n\n# Edges\nalice -- bob :friends since:2020\nalice -&gt; luna :owns\n\n\n\n\n\nflowchart LR\n    alice[\"&lt;b&gt;alice&lt;/b&gt;&lt;br/&gt;&lt;u&gt;person&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Alice&lt;/i&gt;&lt;br/&gt;&lt;i&gt;age: 34&lt;/i&gt;\"]\n    bob[\"&lt;b&gt;bob&lt;/b&gt;&lt;br/&gt;&lt;u&gt;person&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Bob&lt;/i&gt;&lt;br/&gt;&lt;i&gt;age: 32&lt;/i&gt;\"]\n    luna[\"&lt;b&gt;luna&lt;/b&gt;&lt;br/&gt;&lt;u&gt;dog&lt;/u&gt;&lt;br/&gt;&lt;i&gt;age: 4&lt;/i&gt;\"]\n    alice -- \"&lt;u&gt;friends&lt;/u&gt;&lt;br/&gt;&lt;i&gt;since: 2020&lt;/i&gt;\" --- bob\n    alice -- \"&lt;u&gt;owns&lt;/u&gt;\" --&gt; luna"
+    "text": "Example\n\n\n\nExample 1: Property graph in PG format, with syntax highlighting and as diagram\n\n\n# Nodes\nalice :person name:\"Alice\" age:34\nbob   :person name:\"Bob\"   age:32\nluna  :dog    name:\"Luna\"  cute:true\n\n# Edges\nalice -- bob :friends since:2020  # directed\nalice -&gt; luna :owns               # undirected\n\n\n\n\n\n\n\n\nflowchart LR\n    alice[\"&lt;b&gt;alice&lt;/b&gt;&lt;br/&gt;&lt;u&gt;person&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Alice&lt;/i&gt;&lt;br/&gt;&lt;i&gt;age: 34&lt;/i&gt;\"]\n    bob[\"&lt;b&gt;bob&lt;/b&gt;&lt;br/&gt;&lt;u&gt;person&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Bob&lt;/i&gt;&lt;br/&gt;&lt;i&gt;age: 32&lt;/i&gt;\"]\n    luna[\"&lt;b&gt;luna&lt;/b&gt;&lt;br/&gt;&lt;u&gt;dog&lt;/u&gt;&lt;br/&gt;&lt;i&gt;name: Luna&lt;/i&gt;&lt;br/&gt;&lt;i&gt;cute: true&lt;/i&gt;\"]\n    alice -- \"&lt;u&gt;friends&lt;/u&gt;&lt;br/&gt;&lt;i&gt;since: 2020&lt;/i&gt;\" --- bob\n    alice -- \"&lt;u&gt;owns&lt;/u&gt;\" --&gt; luna\n\n\n\n\n\n\n\n\n\n\nExample 2: Same graph in condense PG-JSONL format\n\n\n{\"type\":\"node\",\"id\":\"alice\",\"labels\":[\"person\"],\"properties\":{\"age\":[34],\"name\":[\"Alice\"]}}\n{\"type\":\"node\",\"id\":\"bob\",\"labels\":[\"person\"],\"properties\":{\"age\":[32],\"name\":[\"Bob\"]}}\n{\"type\":\"node\",\"id\":\"luna\",\"labels\":[\"dog\"],\"properties\":{\"cute\":[true],\"name\":[\"Luna\"]}}\n{\"type\":\"edge\",\"from\":\"alice\",\"to\":\"bob\",\"labels\":[\"friends\"],\"properties\":{\"since\":[2020]},\"undirected\":true}\n{\"type\":\"edge\",\"from\":\"alice\",\"to\":\"luna\",\"labels\":[\"owns\"],\"properties\":{}}"
   },
   {
     "objectID": "index.html#applications",
     "href": "index.html#applications",
     "title": "Property Graph Exchange Format (PG)",
     "section": "Applications",
-    "text": "Applications\n\npg-formatter web application\npgraphs graph converter\nsyntax highlighting\nblitzboard"
+    "text": "Applications\n\npg-formatter is a web application to try out, validate and vizualize property graphs in PG format.\npgraphs is a property graph converter command line application and programming library \nBlitzboard is a dashboard web application for graph data\nsyntax highlighting definitions of PG format exist"
   },
   {
     "objectID": "index.html#feedback",
     "href": "index.html#feedback",
     "title": "Property Graph Exchange Format (PG)",
     "section": "Feedback",
-    "text": "Feedback\n\nDiscussions"
+    "text": "Feedback\nFeedback and questions are welcome. There is a discussion board!"
   },
   {
     "objectID": "index.html#publications",
