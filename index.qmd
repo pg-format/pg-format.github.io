@@ -34,14 +34,14 @@ The Property Graph Exchange Format (PG) provides a **data model**, serialization
 
 ## Applications
 
-- [pg-formatter](https://pg-format.github.io/pg-formatter/) is a web application to try out, validate and vizualize property graphs in PG format.
+- [pg-formatter](https://pg-format.github.io/pg-formatter/) web application to try out, validate and vizualize property graphs in PG format
 
-- [pgraphs](https://github.com/pg-format/pgraphs) is a property graph converter command line application and programming library
+- [syntax highlighting](https://github.com/pg-format/pg-highlight) definitions of PG format for multiple highlighting engines
+
+- [pgraphs](https://github.com/pg-format/pgraphs) property graph converter command line application and programming library
   [![NPM Version](http://img.shields.io/npm/v/pgraphs.svg?style=flat)](https://www.npmjs.org/package/pgraphs)
 
-- [Blitzboard](https://www.blitzboard.io/) is a dashboard web application for graph data
-
-- [syntax highlighting](https://github.com/pg-format/pg-highlight) definitions of PG format exist
+- [Blitzboard](https://www.blitzboard.io/) dashboard web application for graph data
 
 ## Feedback and Sources
 
@@ -51,7 +51,7 @@ The [pg-format organization at GitHub](https://github.com/pg-format) contains re
 
 ## Publications
 
-- [Property Graph Exchange Format Specification](https://pg-format.github.io/specification/)
+- **[Property Graph Exchange Format Specification](https://pg-format.github.io/specification/)**
 - Chiba, H., Yamanaka, R., Matsumoto, S.: [Property Graph Exchange Format](https://arxiv.org/abs/1907.03936). 2019
 - Chiba, H., Yamanaka, R., Matsumoto, S.: [G2GML: Graph to Graph Mapping Language for Bridging RDF and Property Graphs](https://doi.org/10.1007/978-3-030-62466-8_11). 2020
 - Voß, J.: [Property-Graphen: eine kurze Einführung](https://jakobib.github.io/pgraphen2024/). 2024
