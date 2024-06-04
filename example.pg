@@ -4,5 +4,5 @@ bob   :person name:"Bob"   age:32
 luna  :dog    name:"Luna"  cute:true
 
 # Edges
-alice -- bob :friends since:2020  # directed
-alice -> luna :owns               # undirected
+alice -- bob :friends since:2020  # undirected
+alice -> luna :owns               # directed
