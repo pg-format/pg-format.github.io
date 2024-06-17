@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Property Graph Exchange Format (PG)",
     "section": "",
-    "text": "The Property Graph Exchange Format (PG) provides a data model, serialization formats and applications for labeled property graphs. See the PG specification for details."
+    "text": "The Property Graph Exchange Format (PG) provides the specification of a labeled property graph data model with serialization formats PG Format, PG-JSON, and PG JSONL. The format comes with applications for converting, visualization, testing, and syntax highlighting."
   },
   {
     "objectID": "index.html#example",
@@ -18,7 +18,7 @@
     "href": "index.html#applications",
     "title": "Property Graph Exchange Format (PG)",
     "section": "Applications",
-    "text": "Applications\n\npg-formatter web application to try out, validate and vizualize property graphs in PG format\nsyntax highlighting definitions of PG format for multiple highlighting engines\npgraphs property graph converter command line application and programming library \nBlitzboard dashboard web application for graph data"
+    "text": "Applications\n\npg-formatter web application to try out, validate and vizualize property graphs in PG format\nsyntax highlighting definitions of PG format for multiple highlighting engines\npgraphs property graph converter command line application and programming library \nPG Test Suite for implementations\nBlitzboard dashboard web application for graph data"
   },
   {
     "objectID": "index.html#feedback-and-sources",
