@@ -5,7 +5,7 @@ crossref:
   lst-title: Example
 ---
 
-The Property Graph Exchange Format (PG) provides a **data model**, serialization **formats** and **applications** for **labeled property graphs**. See the **[PG specification](https://pg-format.github.io/specification/)** for details.
+The Property Graph Exchange Format (PG) provides the **[specification](https://pg-format.github.io/specification/)** of a **labeled property graph data model** with serialization formats [PG Format](https://pg-format.github.io/specification/#pg-format), [PG-JSON](https://pg-format.github.io/specification/#pg-json), and [PG JSONL](https://pg-format.github.io/specification/#pg-jsonl). The format comes with [applications](#applications) for converting, visualization, testing, and syntax highlighting.
 
 ## Example
 
@@ -40,6 +40,8 @@ The Property Graph Exchange Format (PG) provides a **data model**, serialization
 
 - [pgraphs](https://github.com/pg-format/pgraphs) property graph converter command line application and programming library
   [![NPM Version](http://img.shields.io/npm/v/pgraphs.svg?style=flat)](https://www.npmjs.org/package/pgraphs)
+
+- [PG Test Suite](https://github.com/pg-format/pg-test-suite) for implementations
 
 - [Blitzboard](https://www.blitzboard.io/) dashboard web application for graph data
 
