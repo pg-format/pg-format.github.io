@@ -18,7 +18,7 @@
     "href": "index.html#applications",
     "title": "Property Graph Exchange Format (PG)",
     "section": "Applications",
-    "text": "Applications\n\npg-formatter web application to try out, validate and vizualize property graphs in PG format\nsyntax highlighting definitions of PG format for multiple highlighting engines\npgraphs property graph converter command line application and programming library \nPG Test Suite for implementations\nBlitzboard dashboard web application for graph data"
+    "text": "Applications\n\npgformat python package and command line application to parse and serialize Property Graph Exchange Format\npg-formatter web application to try out, validate and vizualize property graphs in PG format\nsyntax highlighting definitions of PG format for multiple highlighting engines\npgraphs property graph converter command line application and programming library \nPG Test Suite for implementations\nBlitzboard dashboard web application for graph data"
   },
   {
     "objectID": "index.html#feedback-and-sources",
