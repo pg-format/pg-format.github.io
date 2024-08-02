@@ -34,6 +34,8 @@ The Property Graph Exchange Format (PG) provides the **[specification](https://p
 
 ## Applications
 
+- [pgformat](https://pypi.org/project/pgformat/) python package and command line application to parse and serialize Property Graph Exchange Format
+
 - [pg-formatter](https://pg-format.github.io/pg-formatter/) web application to try out, validate and vizualize property graphs in PG format
 
 - [syntax highlighting](https://github.com/pg-format/pg-highlight) definitions of PG format for multiple highlighting engines
