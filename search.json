@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Property Graph Exchange Format (PG)",
     "section": "",
-    "text": "The Property Graph Exchange Format (PG) provides the specification of a labeled property graph data model with serialization formats PG Format, PG-JSON, and PG JSONL. The format comes with applications for converting, visualization, testing, and syntax highlighting."
+    "text": "The Property Graph Exchange Format (PG) provides the specification of a labeled property graph data model with serialization formats PG Format, PG-JSON, and PG JSONL. The formats come with applications for converting, visualization, testing, and syntax highlighting."
   },
   {
     "objectID": "index.html#example",
@@ -18,7 +18,7 @@
     "href": "index.html#applications",
     "title": "Property Graph Exchange Format (PG)",
     "section": "Applications",
-    "text": "Applications\n\npgformat python package and command line application to parse and serialize Property Graph Exchange Format\npg-formatter web application to try out, validate and vizualize property graphs in PG format\nsyntax highlighting definitions of PG format for multiple highlighting engines\npgraphs property graph converter command line application and programming library \nPG Test Suite for implementations\nBlitzboard dashboard web application for graph data"
+    "text": "Applications\n\npgformat Python package and command line application to parse and serialize Property Graph Exchange Format\npg-formatter web application to try out, validate and vizualize property graphs in PG format\nsyntax highlighting definitions of PG format for multiple highlighting engines\npgraphs property graph converter command line application and programming library \nPG Test Suite for implementations\nBlitzboard dashboard web application for graph data"
   },
   {
     "objectID": "index.html#feedback-and-sources",
@@ -32,6 +32,6 @@
     "href": "index.html#publications",
     "title": "Property Graph Exchange Format (PG)",
     "section": "Publications",
-    "text": "Publications\n\nProperty Graph Exchange Format Specification\nChiba, H., Yamanaka, R., Matsumoto, S.: Property Graph Exchange Format. 2019\nChiba, H., Yamanaka, R., Matsumoto, S.: G2GML: Graph to Graph Mapping Language for Bridging RDF and Property Graphs. 2020\nVoß, J.: Property-Graphen: eine kurze Einführung. 2024"
+    "text": "Publications\n\nProperty Graph Exchange Format Specification\nChiba, H., Yamanaka, R., Matsumoto, S.: Property Graph Exchange Format. 2019\nChiba, H., Yamanaka, R., Matsumoto, S.: G2GML: Graph to Graph Mapping Language for Bridging RDF and Property Graphs. 2020\nVoß, J.: Property-Graphen: eine kurze Einführung. 2024 (German)"
   }
 ]
